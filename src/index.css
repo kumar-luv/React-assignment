@@ -136,3 +136,43 @@
   100% { transform: rotate(360deg); }
 }
 
+
+@media screen and (max-width: 850px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px; 
+  }
+
+  .card-title {
+    font-size: 13px; 
+  }
+  
+  .card-name {
+    font-size: 1.2em;
+  }
+
+  .image-container {
+    width: 120px; 
+    height: 110px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .image-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px; 
+  }
+
+  .card-title {
+    font-size: 11px;
+  }
+  
+  .card-name {
+    font-size: 1em;
+  }
+
+  .image-container {
+    width: 100px; 
+    height: 90px;
+  }
+}
